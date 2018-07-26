@@ -25,8 +25,8 @@ class PigLatinizer
   end
   
   def piglatinize(phrase)
-    array = phrase.split(" ")
-    array.collect do |word|
+    arr = phrase.split(" ")
+    arr.collect do |word|
       piglatinize_word(word)
     end
     arr.join(" ")
