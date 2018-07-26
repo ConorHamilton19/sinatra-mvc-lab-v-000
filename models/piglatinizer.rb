@@ -34,4 +34,5 @@ class Piglatinzer
     end
     arr.join(" ")
   end
+end
 end 
