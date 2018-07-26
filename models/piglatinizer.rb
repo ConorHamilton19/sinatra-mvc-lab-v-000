@@ -28,4 +28,12 @@ class Piglatinzer
       word[0] += "noway"
     end
   end
+  
+    def piglatinize
+    array = @text.split(" ")
+    array.collect do |word|
+      piglatinize_word(word)
+    end
+    arr.join(" ")
+  end
 end 
