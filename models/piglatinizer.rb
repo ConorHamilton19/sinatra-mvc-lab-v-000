@@ -1,6 +1,6 @@
 class Piglatinzer
   
-  initialize(text)
+  def initialize(text)
     @text = text
   end
   
@@ -34,5 +34,5 @@ class Piglatinzer
     end
     arr.join(" ")
   end
-end
+
 end 
