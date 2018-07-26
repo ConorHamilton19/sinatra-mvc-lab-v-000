@@ -4,9 +4,8 @@ class Piglatinzer
     @text = text
   end
   
-
   def piglatinize_word(word)
-    if word[0].downcase.match(/[aeoiu]/) #begins w a vowel
+    if word[0].downcase.match(/[aeoiu]/) 
       word << "way"
     elsif word[0..2].downcase.match(/[bcdfghjklmnpqrstvwxyz]{3}/)
       word << word[0..2]
@@ -23,13 +22,12 @@ class Piglatinzer
       word << word[0]
       word.slice!(0)
       word << "ay"
-      # word << "pay"
     else
       word[0] += "noway"
     end
   end
   
-    def piglatinize
+  def piglatinize
     array = @text.split(" ")
     array.collect do |word|
       piglatinize_word(word)
