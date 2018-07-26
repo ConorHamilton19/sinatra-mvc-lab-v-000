@@ -8,6 +8,6 @@ class App < Sinatra::Base
   
   post '/' do 
     @piglatinized = piglatinizer.new(params[:user_input]).piglatinize
-    
+    erb :
   end 
 end
