@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end 
   
   post '/' do 
-    
+    @piglatinized = piglatinizer.new(params[:])
     
   end 
 end
