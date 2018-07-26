@@ -1,9 +1,6 @@
 class PigLatinizer
   
-  def initialize(text)
-    @text = text
-  end
-  
+ 
   def piglatinize_word(word)
     if word[0].downcase.match(/[aeoiu]/) 
       word << "way"
@@ -27,8 +24,8 @@ class PigLatinizer
     end
   end
   
-  def piglatinize
-    array = @text.split(" ")
+  def piglatinize(phrase)
+    array = phrase.split(" ")
     array.collect do |word|
       piglatinize_word(word)
     end
