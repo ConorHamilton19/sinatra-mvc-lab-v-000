@@ -1,4 +1,4 @@
-class Piglatinzer
+class PigLatinzer
   
   def initialize(text)
     @text = text
